@@ -1,0 +1,17 @@
+package classe;
+
+public class ProdutoTeste {
+	public static void main(String[] args) {
+		Produto.desconto = 0.59;
+		Produto p1 = new Produto("Notebook");
+//		p1.nome = "NOtebook";
+		p1.preco = 100;
+
+		var p2 = new Produto("Caneta Preta");
+//		p2.nome = "CAneta Preta";
+		p2.preco = 2.0;
+
+		System.out.println(p2.nome);
+		System.out.println(p1.precoComDesconto());
+	}
+}

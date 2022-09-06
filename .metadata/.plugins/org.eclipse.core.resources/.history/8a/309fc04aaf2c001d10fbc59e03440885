@@ -1,0 +1,9 @@
+package oo.polimorfismo;
+
+public class Feijao {
+	private double peso;
+	
+	public Feijao(double peso) {
+		super(peso);
+	}
+}

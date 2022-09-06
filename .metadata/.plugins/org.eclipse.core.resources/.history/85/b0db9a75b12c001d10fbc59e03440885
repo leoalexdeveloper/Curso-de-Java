@@ -1,0 +1,25 @@
+package oo.heranca.desafio;
+
+public class Ferrari extends Carro implements Esportivo, Luxo {
+	
+	public Ferrari(int velocidadeMaxima){
+		super(velocidadeMaxima);
+		delta = 20;
+	}
+	
+	public void ligarTurbo() {
+		delta = 35;
+	}
+	
+	public void desligarTurbo() {
+		delta = 15;
+	}
+	
+	public void ligarAr() {
+		
+	}
+	
+	public void desligarAr() {
+		
+	}
+}

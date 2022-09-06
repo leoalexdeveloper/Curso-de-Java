@@ -1,0 +1,7 @@
+package oo.encapsulamento.casaB;
+
+public class Pedro extends Ana {
+	Ana ana = new Ana();
+	
+	
+}

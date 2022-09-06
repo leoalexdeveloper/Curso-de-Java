@@ -1,0 +1,7 @@
+package Lambdas;
+
+public class Consumidor {
+	public static void main(String[] args) {
+		Consumer<String> imprimir = p -> System.out.println(p.nome);
+	}
+}

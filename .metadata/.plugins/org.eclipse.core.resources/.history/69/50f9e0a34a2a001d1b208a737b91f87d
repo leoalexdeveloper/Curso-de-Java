@@ -1,0 +1,13 @@
+package Arrays;
+
+import java.util.Scanner;
+
+public class Desafio {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		int numeroNotas = entrada.nextInt();
+		for(int i = numeroNotas; i < numeroNotas; i++) {
+			
+		}
+	}
+}

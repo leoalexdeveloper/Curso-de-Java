@@ -1,0 +1,23 @@
+package Arrays;
+
+import java.util.Scanner;
+
+public class DesafioMatriz {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite o número de notas por aluno: ");
+		int qtdAlunos = entrada.nextInt();
+		
+		System.out.println("Digite o número de notas por aluno: ");
+		int qtdNotas = entrada.nextInt();
+		
+		double[] notasAlunos = new double[qtdNotas];
+		
+		for(int i  = 0; i < qtdAlunos; i++) {
+			System.out.printf("Digite a nota do aluno %d", i);
+		}
+		
+		entrada.close();
+	}
+}

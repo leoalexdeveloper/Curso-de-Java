@@ -1,0 +1,16 @@
+package oo.composicao.desafio;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Compra {
+	List<Item> items = new ArrayList<>();
+	
+	double obterValorTotal() {
+		double acumulador = 0;
+		for(Item item: items ) {
+			acumulador += item.preco;
+		}
+		 return acumulador;
+	}
+}

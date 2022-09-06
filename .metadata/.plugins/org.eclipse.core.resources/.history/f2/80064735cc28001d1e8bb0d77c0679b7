@@ -1,0 +1,14 @@
+package classe;
+
+public class DataTeste {
+	public static void main(String[] args) {
+		
+		Data newDate = new Data();
+		
+		String dia = newDate.dia = "30";
+		String mes = newDate.mes = "09";
+		String ano = newDate.ano = "2022";
+		
+		System.out.printf("O dia é %s/%s/%s", dia, mes, ano);
+	}
+}

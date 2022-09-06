@@ -1,0 +1,21 @@
+package classe;
+
+import java.util.Scanner;
+
+public class ProdutoTeste {
+	public static void main(String[] args) {
+
+		Produto p1 = new Produto();
+		p1.nome = "NOtebook";
+		p1.preco = 100;
+		p1.desconto = 0.25;
+
+		var p2 = new Produto();
+		p2.nome = "CAneta Preta";
+		p2.preco = 2.0;
+		p2.desconto = 0.49;
+
+		System.out.println(p2.nome);
+		System.out.println(p1.preco - (p1.preco * p1.desconto));
+	}
+}

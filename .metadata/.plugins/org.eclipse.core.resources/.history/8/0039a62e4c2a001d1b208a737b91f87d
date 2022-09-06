@@ -1,0 +1,27 @@
+package Arrays;
+
+import java.util.Scanner;
+
+public class Desafio {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+ 		System.out.println("Digite o número de alunos: ");
+		double numeroNotas = entrada.nextDouble();
+		
+		double[] notasAlunos = new double[numeroNotas];
+		int acumulador = 0;
+		for(int i = 0; i < numeroNotas; i++) {
+			System.out.printf("Nota aluno %d: ", i+1);
+			int novaNota = entrada.nextInt();
+			notasAlunos[i] = novaNota;
+		}
+		
+		for(int nota: notasAlunos) {
+			System.out.printf("Aluno teve nota: %d\n", nota);
+			acumulador += nota;
+		}
+		
+		System.out.printf("A média de notas dos alunos é: %s", (acumulador / notasAlunos.length));
+	}
+}

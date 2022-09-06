@@ -1,0 +1,13 @@
+package oo.composicao.desafio;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Item {
+	int qtd;
+	Produto produto;
+	
+	Item(String nome, double preco){
+		
+	}
+}

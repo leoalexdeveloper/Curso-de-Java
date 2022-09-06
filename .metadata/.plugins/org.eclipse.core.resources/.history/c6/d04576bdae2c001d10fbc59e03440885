@@ -1,0 +1,10 @@
+package oo.polimorfismo;
+
+public class Comida {
+	private String name;
+	private double peso;
+	public Comida(String name, double peso) {
+		this.name = name;
+		this.peso = peso;
+	}
+}

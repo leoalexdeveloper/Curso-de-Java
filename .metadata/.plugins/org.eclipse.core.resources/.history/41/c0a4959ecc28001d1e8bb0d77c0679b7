@@ -1,0 +1,12 @@
+package classe;
+
+public class Data {
+	int dia = 0;
+	int mes = 0;
+	int ano = 0;
+	
+	String obterDataFormatada() {
+		String dia = (dia < 10) ? "0"+Integer.toString(dia) : Integer.toString(dia);
+		return  + "/" + Integer.toString(mes) + "/" + Integer.toString(ano);
+	}
+}

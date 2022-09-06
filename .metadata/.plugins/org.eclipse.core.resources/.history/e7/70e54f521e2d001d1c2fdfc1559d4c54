@@ -1,0 +1,14 @@
+package Lambdas;
+
+@FunctionalInterface
+public interface Calculo {
+	public abstract double executar(double a, double b);
+	
+	public abstract String a() {
+		return "a";
+	}
+	
+	public abstract static String b() {
+		return "b";
+	}
+}

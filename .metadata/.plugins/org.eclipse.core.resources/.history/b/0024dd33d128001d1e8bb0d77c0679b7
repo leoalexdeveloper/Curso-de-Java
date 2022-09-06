@@ -1,0 +1,10 @@
+package classe;
+
+public class areaCirc {
+	double raio;
+	double pi;
+	
+	AreaCirc(){
+		
+	}
+}

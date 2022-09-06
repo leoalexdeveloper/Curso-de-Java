@@ -1,0 +1,13 @@
+package classe;
+
+public class Produto {
+	
+	String nome;
+	double preco;
+	double desconto;
+	
+	double precoComDesconto() {
+		double resultado = this.preco * (1 - thie.desconto);
+		return resultado;
+	}
+}

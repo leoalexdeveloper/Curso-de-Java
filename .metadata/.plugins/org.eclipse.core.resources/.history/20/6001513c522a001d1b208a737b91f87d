@@ -1,0 +1,34 @@
+package Arrays;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class DesafioMatriz {
+	public static void main(String[] args) {
+		Locale.setDefault(new Locale("en", "US"));
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite o número de alunos: ");
+		int qtdAlunos = entrada.nextInt();
+		
+		System.out.println("Digite o número de notas por aluno: ");
+		int qtdNotas = entrada.nextInt();
+		
+		double[][] alunosNotas = new double[qtdAlunos][qtdNotas];
+		double mediaPorAluno = 0;
+		for(int i  = 0; i < qtdAlunos; i++) {
+			double media = 0;
+			for(int y = 0; y < qtdNotas; y++) {
+				
+				System.out.printf("Digite %d a nota do aluno %d", (y+1)+"°",  i);
+				alunosNotas[i][y] = entrada.nextDouble();
+				media += alunosNotas[i][y];
+			}			
+			mediaPorAluno += media;
+		}
+		
+		System.out.printf("A média dos %d alunos é %.2f", alunosNotas.length, mediaPorAluno / qtdAlunos);
+		entrada.close();
+	}
+}

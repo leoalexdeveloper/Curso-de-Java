@@ -1,0 +1,20 @@
+package oo.heranca.desafio;
+
+public class Carro {
+	double velocidadeAtual;
+	int aceleracao;
+	
+	void acelerar() {
+		velocidadeAtual += aceleracao;
+	}
+	
+	void frear() {
+		if(velocidadeAtual > 0) {			
+			velocidadeAtual -= aceleracao;
+		}
+	}
+	
+	public String toString() {
+		return Integer.toString(velocidadeAtual);
+	}
+}

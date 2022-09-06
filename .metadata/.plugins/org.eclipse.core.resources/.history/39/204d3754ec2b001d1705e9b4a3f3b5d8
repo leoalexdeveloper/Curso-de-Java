@@ -1,0 +1,7 @@
+package oo.heranca;
+
+public class Jogo {
+	Jogador jogador1 = new Jogador();
+	
+	jogador1.andar("norte");
+}

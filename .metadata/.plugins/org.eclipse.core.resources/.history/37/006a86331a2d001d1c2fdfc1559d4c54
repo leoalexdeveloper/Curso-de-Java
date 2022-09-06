@@ -1,0 +1,11 @@
+package Lambdas;
+
+public class CalculoTeste2 {
+	public static void main(String[] args) {
+		public executar(double a, double b) {
+			Calculo soma = (x, y) -> {
+				
+			}
+		}
+	}
+}

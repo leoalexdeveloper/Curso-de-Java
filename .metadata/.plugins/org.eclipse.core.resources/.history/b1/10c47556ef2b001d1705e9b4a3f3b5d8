@@ -1,0 +1,23 @@
+package oo.heranca;
+
+public class Jogo {
+	public static void main(String[] args) {
+		Jogador Heroi = new Heroi();
+		Heroi.x = 10;
+		Heroi.y = 10;
+		
+		Jogador Monstro = new Monstro();
+		Monstro.x = 10;
+		Monstro.y = 11;
+		
+		
+		System.out.println(Heroi.vida);
+		System.out.println(Monstro.vida);
+		
+		Heroi.atacar(Monstro);
+		Monstro.atacar(Heroi);
+		
+		System.out.println("Heroi tem " + Heroi.vida + " vida.");
+		System.out.println("Monstro tem " + Monstro.vida + " vida.");
+	}
+}

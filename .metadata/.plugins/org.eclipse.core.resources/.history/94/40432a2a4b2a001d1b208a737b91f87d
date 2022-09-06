@@ -1,0 +1,21 @@
+package Arrays;
+
+import java.util.Scanner;
+
+public class Desafio {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+ 		System.out.println("Digite o número de alunos: ");
+		int numeroNotas = entrada.nextInt();
+		
+		int[] notasAlunos = new int[numeroNotas];
+		
+		for(int i = numeroNotas; i < numeroNotas; i++) {
+			System.out.printf("Nota aluno %d: ", i+1);
+			int novaNota = entrada.nextInt();
+			notasAlunos[i] = novaNota;
+			
+		}
+	}
+}

@@ -1,0 +1,32 @@
+package classe;
+
+public class ValorVsReferencia {
+	int z = 10;
+	public static void main(String[] args) {
+		double a = 2;
+		double b = a;
+		
+		a++;
+		b--;
+		
+		System.out.println(a + " " + b);
+		
+		Data d1 = new Data(1,6,2022);
+		Data d2 = d1;
+		
+		d1.mes = 31;
+		d2.mes = 12;
+		
+		reset(d1);
+		System.out.println(z);
+		System.out.printf("Data de d1: %s\n", d1.obterDataFormatada());
+		System.out.printf("Datas de d2: %s", d2.obterDataFormatada());
+		
+	}
+	
+	static void reset(Data d) {
+		d.dia = 1;
+		d.mes = 1;
+		d.ano = 1970;
+	}
+}

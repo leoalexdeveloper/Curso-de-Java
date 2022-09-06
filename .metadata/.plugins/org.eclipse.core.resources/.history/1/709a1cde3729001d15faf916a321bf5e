@@ -1,0 +1,11 @@
+package Arrays;
+
+public class Exercicio {
+	public static void main(String[] args) {
+		double[] notasAlunosA = new double[3];
+		notasAlunosA[0] = 10.0;
+		
+		Arrays.toString(notasAlunosA);
+		System.out.println(notasAlunosA[0]);
+	}
+}

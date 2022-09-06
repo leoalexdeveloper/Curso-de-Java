@@ -1,0 +1,27 @@
+package classe;
+
+public class Produto {
+	
+	String nome;
+	double preco;
+	double desconto;
+	
+	Produto(String nomeInicial, 
+			double precoInicial){
+		nome = nomeInicial;
+		preco = precoInicial;
+	}
+	
+	Produto(){
+		
+	}
+	
+	static void 20PorcentoDeDesconto() {
+		
+	}
+	
+	float precoComDesconto() {
+		float resultado = (float) (preco * (1 - desconto));
+		return resultado;
+	}
+}
